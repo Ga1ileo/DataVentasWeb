@@ -216,3 +216,12 @@ C:\Aplicada2\DataVentasWeb\obj\Debug\netcoreapp3.1\staticwebassets\DataVentasWeb
 C:\Aplicada2\DataVentasWeb\obj\Debug\netcoreapp3.1\DataVentasWeb.dll
 C:\Aplicada2\DataVentasWeb\obj\Debug\netcoreapp3.1\DataVentasWeb.pdb
 C:\Aplicada2\DataVentasWeb\obj\Debug\netcoreapp3.1\DataVentasWeb.genruntimeconfig.cache
+C:\Aplicada2\DataVentasWeb\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\UsuariosPage.razor.g.cs
+C:\Aplicada2\DataVentasWeb\obj\Debug\netcoreapp3.1\Razor\Pages\UsuariosPage.razor.g.cs
+C:\Aplicada2\DataVentasWeb\bin\Debug\netcoreapp3.1\Blazored.Toast.dll
+C:\Aplicada2\DataVentasWeb\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+C:\Aplicada2\DataVentasWeb\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+C:\Aplicada2\DataVentasWeb\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+C:\Aplicada2\DataVentasWeb\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+C:\Aplicada2\DataVentasWeb\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+C:\Aplicada2\DataVentasWeb\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll

@@ -1,0 +1,182 @@
+@page "/usuarios"
+<h1>DataVentas!</h1>
+@*@page "/usuarios/{UsuarioId:int}"
+
+@using DataVentasWeb.BLL
+@using DataVentasWeb.Models
+
+@inject IToastService toast
+
+<EditForm Model="Usuario" OnValidSubmit="Guardar">
+            <DataAnnotationsValidator />
+            <div class="card border-success">
+                <div class="card-header bg-success text-lg-center" style="border-radius:5px;">
+                    <h3 style="font-family:Georgia; color:white">Registro de usuarios</h3>
+                </div>
+
+                <div class="card-body">
+                    <form>
+                        @*Usuario Id
+                        <div class="form-row justify-content-between">
+                            <div class="col-5">
+                                <div class="form-group">
+                                    <label>Usuario Id</label>
+                                    <div class="input-group">
+                                        <InputNumber @bind-Value="Usuario.UsuarioId" min="0" class="form-control col" />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-primary input-group-text" @onclick="Buscar">
+                                                <span class="oi oi-magnifying-glass"> </span>Buscar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                         @*Nombres
+                        <div class="form-group">
+                            <label>Nombres</label>
+                            <InputText @bind-Value="Usuario.Nombres" class="form-control" />
+                            <ValidationMessage For="@(() => Usuario.Nombres)" />
+                        </div>
+
+                            @*Nombre de Usuario
+                            <div class="form-group col">
+                                <label>Nombre de usuario</label>
+                                <InputText @bind-Value="Usuario.NombreUsuario" class="form-control" />
+                                <ValidationMessage For="@(() => Usuario.NombreUsuario)" />
+                            </div>
+
+                          @*Email
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" @bind="Usuario.Email" class="form-control" />
+                            <ValidationMessage For="@(() => Usuario.Email)" />
+                        </div>
+
+                        @*Clave de Usuario
+                        <div class="form-group col">
+                            <label>Clave de usuario</label>
+                            <input type="@(mostrarClave? "text" : "password")" @bind="Usuario.Clave" class="form-control" />
+                            <ValidationMessage For="@(() => Usuario.Clave)" />
+                        </div>
+
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-info" @onmousedown="MostrarClave" @onmouseup="OcultarClave">
+                                <span class="fa fa-eye" style="margin-top:2px"></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+                <div class="card-footer">
+                    <div class="form-group text-center" display: inline-block>
+                        <button type="button" class="btn btn-lg btn-primary" @onclick="Nuevo"> <span class="oi oi-file"></span> Nuevo </button>
+                        <button type="submit" class="btn btn-lg btn-success"> <span class="oi oi-cloud"></span> Guardar </button>
+                        <button type="button" class="btn btn-lg btn-danger" @onclick="Eliminar"> <span class="oi oi-trash"></span> Eliminar </button>
+                    </div>
+                </div>
+</EditForm>*@
+
+@*@code {
+    [Parameter]
+    public int UsuarioId { get; set; }
+    private Usuarios Usuario = new Usuarios();
+    private bool TipoUsuario = false;
+    private bool mostrarClave;
+    private bool ClaveVerificada = false;
+
+    public void MostrarClave()
+    {
+        mostrarClave = true;
+    }
+
+    public void OcultarClave()
+    {
+        mostrarClave = false;
+    }
+
+
+    public bool ValidarClave()
+    {
+        bool paso = true;
+        if(Usuario.Clave.Length < 8)
+        {
+            paso = false;
+        }
+        return paso;
+    }
+
+    protected override void OnInitialized()
+    {
+        Nuevo();
+        Buscar();
+      
+    }
+
+    private void Nuevo()
+    {
+        Usuario = new Usuarios();
+    }
+
+    private void Buscar()
+    {
+        if (Usuario.UsuarioId > 0)
+        {
+            var encontrado = UsuariosBLL.Buscar(Usuario.UsuarioId);
+
+            if (encontrado != null)
+                this.Usuario = encontrado;
+            else
+                toast.ShowWarning("No encontrado");
+        }
+    }
+
+    public void Guardar()
+    {
+        bool guardo;
+
+        if (ClaveVerificada)
+        {
+            if (ValidarClave() == true)
+            {
+                guardo = UsuariosBLL.Guardar(Usuario, Usuario.UsuarioId);
+
+                if (guardo)
+                {
+                    Nuevo();
+                    toast.ShowSuccess("Guardado correctamente");
+                }
+                else
+                    toast.ShowError("No fue posible guardar");
+            }
+            else
+            {
+                toast.ShowWarning("La contraseña debe tener 8 o mas caracteres");
+            }
+        }
+        else
+            toast.ShowWarning("Las contraseñas no coinciden");
+    }
+
+    public void Eliminar()
+    {
+        bool elimino;
+        
+        elimino = UsuariosBLL.Eliminar(Usuario.UsuarioId);
+
+            if (elimino)
+            {
+                Nuevo();
+                toast.ShowSuccess("Eliminado correctamente");
+            }
+            else
+                toast.ShowError("No fue posible eliminar");
+        
+    }
+
+  
+
+    
+}*@
+                        
