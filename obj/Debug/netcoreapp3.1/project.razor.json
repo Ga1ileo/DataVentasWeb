@@ -12,55 +12,101 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -105160214,
+        "HashCode": 15014531,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Shared.SurveyPrompt",
+        "Name": "DataVentasWeb.App",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Shared.SurveyPrompt"
+          "Common.TypeName": "DataVentasWeb.App"
         }
       },
       {
-        "HashCode": -1134729000,
+        "HashCode": -905596613,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Shared.SurveyPrompt",
+        "Name": "DataVentasWeb.App",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DataVentasWeb.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "DataVentasWeb.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Shared.SurveyPrompt",
+          "Common.TypeName": "DataVentasWeb.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -431219493,
+        "Kind": "Components.Component",
+        "Name": "DataVentasWeb.Pages.Counter",
+        "AssemblyName": "DataVentasWeb",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DataVentasWeb.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": 1244128809,
+        "Kind": "Components.Component",
+        "Name": "DataVentasWeb.Pages.Counter",
+        "AssemblyName": "DataVentasWeb",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DataVentasWeb.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DataVentasWeb.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1516717167,
+        "Kind": "Components.Component",
+        "Name": "DataVentasWeb.Pages.Index",
+        "AssemblyName": "DataVentasWeb",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DataVentasWeb.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -1518300360,
+        "Kind": "Components.Component",
+        "Name": "DataVentasWeb.Pages.Index",
+        "AssemblyName": "DataVentasWeb",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DataVentasWeb.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DataVentasWeb.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -94,39 +140,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "DataVentasWeb.Shared.LoginDisplay",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1567069333,
-        "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Shared.NavMenu",
-        "AssemblyName": "DataVentasWeb",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 583980694,
-        "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Shared.NavMenu",
-        "AssemblyName": "DataVentasWeb",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "DataVentasWeb.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -227,134 +240,88 @@
         }
       },
       {
-        "HashCode": 15014531,
+        "HashCode": -1567069333,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.App",
+        "Name": "DataVentasWeb.Shared.NavMenu",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.App"
+          "Common.TypeName": "DataVentasWeb.Shared.NavMenu"
         }
       },
       {
-        "HashCode": -905596613,
+        "HashCode": 583980694,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.App",
+        "Name": "DataVentasWeb.Shared.NavMenu",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DataVentasWeb.App"
+            "TagName": "DataVentasWeb.Shared.NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.App",
+          "Common.TypeName": "DataVentasWeb.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1516717167,
+        "HashCode": -105160214,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Pages.Index",
+        "Name": "DataVentasWeb.Shared.SurveyPrompt",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Pages.Index"
+          "Common.TypeName": "DataVentasWeb.Shared.SurveyPrompt"
         }
       },
       {
-        "HashCode": -1518300360,
+        "HashCode": -1134729000,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Pages.Index",
+        "Name": "DataVentasWeb.Shared.SurveyPrompt",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DataVentasWeb.Pages.Index"
+            "TagName": "DataVentasWeb.Shared.SurveyPrompt"
           }
         ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -431219493,
-        "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Pages.Counter",
-        "AssemblyName": "DataVentasWeb",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
+        "BoundAttributes": [
           {
-            "TagName": "Counter"
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": 1244128809,
-        "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Pages.Counter",
-        "AssemblyName": "DataVentasWeb",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "DataVentasWeb.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -830296261,
-        "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Pages.FetchData",
-        "AssemblyName": "DataVentasWeb",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -1805650858,
-        "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Pages.FetchData",
-        "AssemblyName": "DataVentasWeb",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "DataVentasWeb.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Pages.FetchData",
+          "Common.TypeName": "DataVentasWeb.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
