@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "j6zrIdTp5aeZmKLDHllX6Zd7nsmek3FodBCvwn9o7eBaDPQfbouMFWppnwaQC8K+iwexJmE+y8X88kVczhjV8Q==",
+  "dgSpecHash": "/rJL8uezXipt+rCnSfW4nMM25WtYSb2lsvhAAGFZsEH3sPdVU2Qdr88rFh4kNtZJ/WzdzE6GMiXGUiff0knCKQ==",
   "success": true,
   "projectFilePath": "/Users/miguelgondres/Projects/DataVentasWeb/DataVentasWeb.csproj",
   "expectedPackageFiles": [
     "/Users/miguelgondres/.nuget/packages/blazored.toast/3.1.2/blazored.toast.3.1.2.nupkg.sha512",
     "/Users/miguelgondres/.nuget/packages/microsoft.aspnetcore.authentication.facebook/3.1.10/microsoft.aspnetcore.authentication.facebook.3.1.10.nupkg.sha512",
+    "/Users/miguelgondres/.nuget/packages/microsoft.aspnetcore.authentication.google/3.1.10/microsoft.aspnetcore.authentication.google.3.1.10.nupkg.sha512",
     "/Users/miguelgondres/.nuget/packages/microsoft.aspnetcore.authorization/3.1.4/microsoft.aspnetcore.authorization.3.1.4.nupkg.sha512",
     "/Users/miguelgondres/.nuget/packages/microsoft.aspnetcore.components/3.1.4/microsoft.aspnetcore.components.3.1.4.nupkg.sha512",
     "/Users/miguelgondres/.nuget/packages/microsoft.aspnetcore.components.analyzers/3.1.4/microsoft.aspnetcore.components.analyzers.3.1.4.nupkg.sha512",
