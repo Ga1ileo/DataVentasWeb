@@ -42,6 +42,22 @@ namespace DataVentasWeb
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
             services.AddSingleton<WeatherForecastService>();
             services.AddBlazoredToast();
+
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+                facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+
+                facebookOptions.Events = new Microsoft.AspNetCore.Authentication.OAuth.OAuthEvents()
+                {
+                    OnRemoteFailure = LoginFailureHandler =>
+                    {
+                        var authProperties = facebookOptions.StateDataFormat.Unprotect(LoginFailureHandler.Request.Query["state"]);
+                        LoginFailureHandler.Response.Redirect("/Identity/Account/Login");
+                        return Task.FromResult(0);
+                    }
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

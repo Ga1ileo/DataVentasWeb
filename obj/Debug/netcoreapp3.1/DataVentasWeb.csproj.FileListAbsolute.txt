@@ -234,3 +234,4 @@ C:/Aplicada2/DataVentasWeb/bin/Debug/netcoreapp3.1/Microsoft.JSInterop.dll
 /Users/miguelgondres/Projects/DataVentasWeb/bin/Debug/netcoreapp3.1/Microsoft.JSInterop.dll
 /Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/UsuariosPage.razor.g.cs
 /Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/Razor/Pages/UsuariosPage.razor.g.cs
+/Users/miguelgondres/Projects/DataVentasWeb/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Facebook.dll
