@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
       <File FileName="Pages/Index.razor" Line="19" Column="29" />
-      <File FileName="Program.cs" Line="15" Column="6" />
+      <File FileName="Program.cs" />
       <File FileName="Startup.cs" Line="57" Column="51" />
     </Files>
     <Pads>
