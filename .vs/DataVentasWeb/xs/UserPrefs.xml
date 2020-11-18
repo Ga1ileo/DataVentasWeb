@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{56FC1097-975A-4B93-9D4E-CB9A6C045909}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Index.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
       <File FileName="Pages/Index.razor" Line="19" Column="29" />
+      <File FileName="Program.cs" Line="15" Column="6" />
+      <File FileName="Startup.cs" Line="57" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DataVentasWeb" expanded="True">
             <Node name="DataVentasWeb" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="Index.razor" selected="True" />
-              </Node>
+              <Node name="Pages" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
