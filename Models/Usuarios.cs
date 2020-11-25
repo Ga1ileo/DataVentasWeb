@@ -17,6 +17,7 @@ namespace DataVentasWeb.Models
         public string Nombres { get; set; }
         [Required(ErrorMessage = "Es obligatorio introducir el nombre de usuario")]
 
+
         public string NombreUsuario { get; set; }
 
         

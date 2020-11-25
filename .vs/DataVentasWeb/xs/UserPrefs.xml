@@ -1,25 +1,37 @@
 ﻿<Properties StartupConfiguration="{56FC1097-975A-4B93-9D4E-CB9A6C045909}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Index.razor">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Pages/Index.razor" Line="29" Column="52" />
-      <File FileName="Program.cs" />
-      <File FileName="Startup.cs" Line="75" Column="16" />
+      <File FileName="DAL/Contexto.cs" Line="8" Column="79" />
+      <File FileName="Models/Usuarios.cs" Line="18" Column="84" />
+      <File FileName="Startup.cs" Line="41" Column="55" />
+      <File FileName="Pages/UsuariosPage.razor" Line="98" Column="1" />
+      <File FileName="Areas/Identity/Pages/Shared/_LoginPartial.cshtml" Line="2" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DataVentasWeb" expanded="True">
             <Node name="DataVentasWeb" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="Index.razor" selected="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Pages" expanded="True">
+                    <Node name="Shared" expanded="True" />
+                  </Node>
+                </Node>
               </Node>
+              <Node name="BLL" expanded="True" />
+              <Node name="DAL" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Usuarios.cs" selected="True" />
+              </Node>
+              <Node name="Pages" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.DataVentasWeb PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.DataVentasWeb PreferredExecutionTarget="/Applications/Firefox Developer Edition.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

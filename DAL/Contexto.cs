@@ -16,21 +16,11 @@ namespace DataVentasWeb.DAL
         public DbSet<PagosVentas> PagosVentas { get; set; }
         public DbSet<PagosCompras> PagosCompras { get; set; }
         
-        public Contexto(DbContextOptions<Contexto> options)
-            : base(options)
+        public Contexto(DbContextOptions<Contexto> options) : base(options) { }
+        
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-        }
-
-       /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-    
-            optionsBuilder.UseSqlServer(@"Server=.\\SQLEXPRESS; Initial Catalog=DataVentasWeb.db;Persist Security Info=True;Integrated Security = True");
-            base.OnConfiguring(optionsBuilder);
-        }*/
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Usuarios>().HasData(new Usuarios { UsuarioId = 1, Nombres = "Admin", NombreUsuario = "admin" });
+            base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Vendedores>().HasData(new Vendedores { VendedorId = 1, Nombres = "Maria", Email = "Maria2020@gmail.com", Telefono = "829-587-5468", Celular = "829-749-7827", Cedula="064-1459022-2", Direccion="Tenares, El cruce", UsuarioId = 1 });
 

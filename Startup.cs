@@ -36,6 +36,7 @@ namespace DataVentasWeb
             services.AddDbContext<Contexto>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddDefaultIdentity<Usuarios>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<Contexto>();
            
