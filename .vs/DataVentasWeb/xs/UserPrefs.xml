@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{56FC1097-975A-4B93-9D4E-CB9A6C045909}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Usuarios.cs">
     <Files>
       <File FileName="DAL/Contexto.cs" Line="23" Column="48" />
       <File FileName="Models/Usuarios.cs" Line="15" Column="2" />
