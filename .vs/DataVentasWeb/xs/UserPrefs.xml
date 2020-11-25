@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="DAL/Contexto.cs" Line="8" Column="79" />
-      <File FileName="Models/Usuarios.cs" Line="18" Column="84" />
+      <File FileName="Models/Usuarios.cs" Line="8" Column="31" />
       <File FileName="Startup.cs" Line="41" Column="55" />
       <File FileName="Pages/UsuariosPage.razor" Line="98" Column="1" />
       <File FileName="Areas/Identity/Pages/Shared/_LoginPartial.cshtml" Line="2" Column="28" />
