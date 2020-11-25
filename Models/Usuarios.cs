@@ -9,6 +9,7 @@ namespace DataVentasWeb.Models
 {
     public class Usuarios : IdentityUser<int>
     {
+
         
     }
 
