@@ -17,6 +17,7 @@ using DataVentasWeb.Areas.Identity;
 using DataVentasWeb.DAL;
 using Blazored.Toast;
 using DataVentasWeb.Models;
+using DataVentasWeb.BLL;
 
 namespace DataVentasWeb
 {
@@ -33,6 +34,7 @@ namespace DataVentasWeb
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<VentasBLL>();
             services.AddDbContext<Contexto>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
