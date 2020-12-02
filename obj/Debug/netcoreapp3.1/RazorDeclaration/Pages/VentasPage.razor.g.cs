@@ -89,20 +89,6 @@ using Blazored.Toast.Services;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 4 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/VentasPage.razor"
-using DataVentasWeb.BLL;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 5 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/VentasPage.razor"
-using DataVentasWeb.Models;
-
-#line default
-#line hidden
-#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/ventas")]
     public partial class VentasPage : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -111,70 +97,6 @@ using DataVentasWeb.Models;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 36 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/VentasPage.razor"
-       
-
-    [Inject]
-    public VentasBLL VentasBLL { get; set; }
-    public ClientesBLL ClientesBLL { get; set; }
-
-
-    public Ventas ventas { get; set; }
-    public Clientes clientes { get; set; }
-    public List<VentasDetalles> VentaLista = new List<VentasDetalles>();
-    public List<Clientes> ClienteLista = new List<Clientes>();
-
-
-    protected override async Task OnInitializedAsync()
-    {
-        Nuevo();
-        ClienteLista = await ClientesBLL.GetClientes();
-    }
-
-    void Nuevo()
-    {
-        ventas = new Ventas();
-        VentaLista = new List<VentasDetalles>();
-
-    }
-
-    async Task Guardar()
-    {
-        bool guardado;
-
-        guardado = await VentasBLL.Guardar(ventas);
-
-        if (guardado)
-        {
-            toast.ShowSuccess("Guardado");
-        }
-        else
-            toast.ShowError("Error al guardar");
-
-    }
-
-    async Task Eliminar()
-    {
-        bool eliminado;
-
-        eliminado = await VentasBLL.Eliminar(ventas.VentaId);
-
-        if (eliminado)
-        {
-            toast.ShowSuccess("Eliminado");
-        }
-        else
-            toast.ShowError("Error al eliminar");
-    }
-
-
-
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IToastService toast { get; set; }
     }
 }
 #pragma warning restore 1591

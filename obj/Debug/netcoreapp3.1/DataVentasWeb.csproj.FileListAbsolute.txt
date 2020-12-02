@@ -276,3 +276,7 @@ C:/Aplicada2/DataVentasWeb/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Ventas
 C:/Aplicada2/DataVentasWeb/obj/Debug/netcoreapp3.1/Razor/Pages/VentasPage.razor.g.cs
 /Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/VentasPage.razor.g.cs
 /Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/Razor/Pages/VentasPage.razor.g.cs
+/Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Rules.razor.g.cs
+/Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/Razor/Pages/Rules.razor.g.cs
+/Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Board.razor.g.cs
+/Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/Razor/Pages/Board.razor.g.cs

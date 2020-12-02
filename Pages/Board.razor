@@ -1,0 +1,86 @@
+﻿@page "/board"
+
+@using DataVentasWeb.BLL
+@using DataVentasWeb.Models
+@using DataVentasWeb.DAL
+
+
+<div class="card">
+
+    <div class="card-header">
+        <h3>Gameplays made</h3>
+    </div>
+
+    <div class="card-body">
+        <div class="form-group">
+            <div class="form-row">
+                <div class="input-group">
+                    <div class="col-6">
+                        <div class="input-group mb-3">
+                            <select class="form-control" @bind="filtro">
+                                <option value="0">Todos</option>
+                            </select>
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-primary" @onclick="Consultar">Serch</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table text-center">
+        <thead class="thead-light">
+            <tr>
+                <th>Username</th>
+                <th>Time</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in lista)
+            {
+                <tr>
+                    <td>@item.Nombre</td>
+                    <td>@item.Tiempo</td>
+                    <td>@item.Mensaje</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+@code {
+
+    [Inject]
+    public JugadoresBLL JugadoresBLL { get; set; }
+    public int filtro { get; set; }
+    public List<Jugadores> lista = new List<Jugadores>();
+
+
+    [Inject]
+    public Contexto _contexto { get; set;}
+
+    Jugadores jugador = new Jugadores();
+
+    private void Consultar()
+    {
+        try
+        {
+            switch (filtro)
+            {
+                case 0:
+                    this.lista = JugadoresBLL.GetJugadores(p => true);
+                    break;
+            }
+        }
+        catch (Exception)
+        {
+
+            throw;
+        }
+    }
+
+}

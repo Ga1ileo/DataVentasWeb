@@ -8,6 +8,7 @@ namespace DataVentasWeb.DAL
     public class Contexto : IdentityDbContext<Usuarios, IdentityRole<int>,int>
     {
         public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet <Jugadores> Jugadores { get; set; }
         public DbSet<Vendedores> Vendedores { get; set; }
         public DbSet<Compras> Compras { get; set; }
         public DbSet<Ventas> Ventas { get; set; }
@@ -27,6 +28,8 @@ namespace DataVentasWeb.DAL
             modelBuilder.Entity<Clientes>().HasData(new Clientes { ClienteId = 1, Nombres = "Jose Perez", Email = "JosePerez2020@mgail.com", Telefono = "829-587-7521", Celular = "809-549-7827", Cedula = "064-5639022-1", Direccion = "Ciudad modelo tenares", UsuarioId = 1 });
 
             modelBuilder.Entity<Productos>().HasData(new Productos { ProductoId = 1, Descripcion = "Bebidas", Cantidad = 10, Precio = 150, Costo = 100, UsuarioId = 1 });
+
+          
         }
 
 

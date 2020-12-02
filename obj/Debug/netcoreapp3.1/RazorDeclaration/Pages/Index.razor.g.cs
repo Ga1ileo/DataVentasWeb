@@ -89,7 +89,29 @@ using Blazored.Toast.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 6 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+using DataVentasWeb.BLL;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+using DataVentasWeb.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 8 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+using System.Timers;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/game")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -97,6 +119,145 @@ using Blazored.Toast.Services;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 75 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+      
+
+    [Inject]
+    public JugadoresBLL JugadoresBLL { get; set; }
+    public Jugadores jugador { get; set; } = new Jugadores();
+
+    async Task Guardar()
+    {
+        bool guardado;
+
+        if(jugador.Nombre == null || jugador.Mensaje == null)
+        {
+            toast.ShowError("Faltan campos por llenar");
+        }
+        else
+        {
+            guardado = await JugadoresBLL.Guardar(jugador);
+            if (guardado)
+            {
+                SetupGame();
+                toast.ShowSuccess("Guardado");
+            }
+            else
+                toast.ShowError("Error al guardar");
+        }
+
+
+
+    }
+
+
+    List<string> animalEmoji = new List<string>()
+    {
+        "🐶","🐶",
+        "🐺","🐺",
+        "🐮","🐮",
+        "🦊","🦊",
+        "🐱","🐱",
+        "🦁","🦁",
+        "🐯","🐯",
+        "🐹","🐹",
+        "🐝","🐝",
+        "🐢","🐢",
+    };
+
+
+    List<string> shuffledAnimals = new List<string>();
+    int matchesFound = 0;
+    Timer timer;
+    int tenthsOfSecoundsElapsed = 0;
+    string timeDisplay;
+    string nombre = string.Empty;
+    string tiempo;
+
+
+    protected override void OnInitialized()
+    {
+
+        timer = new Timer(100);
+        timer.Elapsed += Timer_Trick;
+        tiempo = string.Empty;
+        SetupGame();
+    }
+
+    private void SetupGame()
+    {
+        Random random = new Random();
+        shuffledAnimals = animalEmoji
+            .OrderBy(item => random.Next())
+            .ToList();
+        matchesFound = 0;
+        tenthsOfSecoundsElapsed = 0;
+        jugador.Tiempo = timeDisplay;
+    }
+
+    string lastAnimalFound = string.Empty;
+    string lastDescription = string.Empty;
+
+    private void ButtonClick(string animal, string animalDescription)
+    {
+        if (lastAnimalFound == string.Empty)
+        {
+            //First selection of the pair. Remenber it.
+            lastAnimalFound = animal;
+            lastDescription = animalDescription;
+            timer.Start();
+        }
+        else if ((animalDescription != lastDescription) && (lastAnimalFound == animal))
+        {
+            //match found! reset for next pair.
+            lastAnimalFound = string.Empty;
+
+            //Replace found animals with empty string to hid then
+            shuffledAnimals = shuffledAnimals
+                .Select(a => a.Replace(animal, string.Empty))
+                .ToList();
+            matchesFound++;
+            if (matchesFound == 10)
+            {
+                timer.Stop();
+                timeDisplay += " ";
+                tiempo = timeDisplay;
+                SetupGame();
+            }
+
+        }
+        else
+        {
+            //user selected a pair that dont match.
+            //reset selection
+            lastAnimalFound = string.Empty;
+        }
+    }
+
+    private void Timer_Trick(Object source, ElapsedEventArgs e)
+    {
+        InvokeAsync(() =>
+        {
+            tenthsOfSecoundsElapsed++;
+            timeDisplay = (tenthsOfSecoundsElapsed / 10F)
+            .ToString("0.0s");
+            StateHasChanged();
+        });
+
+        getTime(timeDisplay);
+    }
+
+    public void getTime(string t)
+    {
+        t = jugador.Tiempo;
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IToastService toast { get; set; }
     }
 }
 #pragma warning restore 1591

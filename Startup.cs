@@ -35,6 +35,7 @@ namespace DataVentasWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<VentasBLL>();
+            services.AddTransient<JugadoresBLL>();
             services.AddDbContext<Contexto>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));

@@ -6360,7 +6360,7 @@
       "outputPath": "/Users/miguelgondres/Projects/DataVentasWeb/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/miguelgondres/.config/NuGet/NuGet.Config"
+        "/Users/miguelgondres/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
