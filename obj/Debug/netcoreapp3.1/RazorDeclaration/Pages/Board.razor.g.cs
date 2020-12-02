@@ -90,22 +90,29 @@ using Blazored.Toast.Services;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Board.razor"
+#line 5 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Board.razor"
 using DataVentasWeb.BLL;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Board.razor"
+#line 6 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Board.razor"
 using DataVentasWeb.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Board.razor"
+#line 7 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Board.razor"
 using DataVentasWeb.DAL;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Board.razor"
+           [Authorize]
 
 #line default
 #line hidden
@@ -129,7 +136,7 @@ using DataVentasWeb.DAL;
 
 
     [Inject]
-    public Contexto _contexto { get; set;}
+    public Contexto _contexto { get; set; }
 
     Jugadores jugador = new Jugadores();
 

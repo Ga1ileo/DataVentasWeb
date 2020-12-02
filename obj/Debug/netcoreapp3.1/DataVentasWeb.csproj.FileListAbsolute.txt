@@ -280,3 +280,5 @@ C:/Aplicada2/DataVentasWeb/obj/Debug/netcoreapp3.1/Razor/Pages/VentasPage.razor.
 /Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/Razor/Pages/Rules.razor.g.cs
 /Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Board.razor.g.cs
 /Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/Razor/Pages/Board.razor.g.cs
+/Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Chat.razor.g.cs
+/Users/miguelgondres/Projects/DataVentasWeb/obj/Debug/netcoreapp3.1/Razor/Pages/Chat.razor.g.cs

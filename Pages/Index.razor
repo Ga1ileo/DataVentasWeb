@@ -2,9 +2,10 @@
 @page "/game"
 
 @inject IToastService toast
+@attribute [Authorize]
 
 @using DataVentasWeb.BLL
-@using DataVentasWeb.Models 
+@using DataVentasWeb.Models
 @using System.Timers
 
 <style>
@@ -59,11 +60,11 @@
             <ValidationMessage For="@(() => jugador.Nombre)"></ValidationMessage>
         </div>
         <div class="col">
-            <textarea id="mensaje" class="form-control" @bind="jugador.Mensaje" placeholder="Message" rows="1"></textarea>
+            <textarea id="mensaje" class="form-control" @bind="jugador.Mensaje" placeholder="type message for the chat" rows="1"></textarea>
             <ValidationMessage For="@(() => jugador.Mensaje)"></ValidationMessage>
         </div>
         <div class="col">
-            <button type="button" @onclick="Guardar" class="form-control btn btn-warning">send play to board</button>
+            <button type="button" @onclick="Guardar" class="form-control btn btn-warning">send play to board and message to chat</button>
         </div>
 
     </div>
@@ -82,9 +83,17 @@
     {
         bool guardado;
 
-        if(jugador.Nombre == null || jugador.Mensaje == null)
+        if (jugador.Nombre == null)
         {
-            toast.ShowError("Faltan campos por llenar");
+            toast.ShowError("Please fill username and message and you need to PLAY");
+        }
+        else if (jugador.Mensaje == null)
+        {
+            toast.ShowError("Please fill username and message and you need to PLAY");
+        }
+        else if (jugador.Tiempo == null)
+        {
+            toast.ShowError("Please fill username and message and you need to PLAY");
         }
         else
         {
@@ -104,7 +113,7 @@
 
 
     List<string> animalEmoji = new List<string>()
-    {
+{
         "🐶","🐶",
         "🐺","🐺",
         "🐮","🐮",

@@ -40,7 +40,7 @@ namespace DataVentasWeb
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDefaultIdentity<Usuarios>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<Usuarios>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<Contexto>();
            
             services.AddRazorPages();

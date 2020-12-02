@@ -90,22 +90,29 @@ using Blazored.Toast.Services;
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+#line 7 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
 using DataVentasWeb.BLL;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+#line 8 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
 using DataVentasWeb.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+#line 9 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
 using System.Timers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+           [Authorize]
 
 #line default
 #line hidden
@@ -120,7 +127,7 @@ using System.Timers;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 75 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+#line 76 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
       
 
     [Inject]
@@ -131,9 +138,17 @@ using System.Timers;
     {
         bool guardado;
 
-        if(jugador.Nombre == null || jugador.Mensaje == null)
+        if (jugador.Nombre == null)
         {
-            toast.ShowError("Faltan campos por llenar");
+            toast.ShowError("Please fill username and message and you need to PLAY");
+        }
+        else if (jugador.Mensaje == null)
+        {
+            toast.ShowError("Please fill username and message and you need to PLAY");
+        }
+        else if (jugador.Tiempo == null)
+        {
+            toast.ShowError("Please fill username and message and you need to PLAY");
         }
         else
         {
@@ -153,7 +168,7 @@ using System.Timers;
 
 
     List<string> animalEmoji = new List<string>()
-    {
+{
         "🐶","🐶",
         "🐺","🐺",
         "🐮","🐮",

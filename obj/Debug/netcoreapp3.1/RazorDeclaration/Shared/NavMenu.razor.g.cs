@@ -97,7 +97,7 @@ using Blazored.Toast.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 29 "/Users/miguelgondres/Projects/DataVentasWeb/Shared/NavMenu.razor"
+#line 33 "/Users/miguelgondres/Projects/DataVentasWeb/Shared/NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
