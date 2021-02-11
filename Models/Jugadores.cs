@@ -10,10 +10,10 @@ namespace DataVentasWeb.Models
         public int JugadorId { get; set; }
 
         [Required(ErrorMessage = "Es obligatorio introducir el nombre")]
-        public string Nombre { get; set; }
+        public string nombre { get; set; }
 
         [Required(ErrorMessage = "Es obligatorio introducir el tiempo")]
-        public string Tiempo { get; set; }
+        public string puntuacion { get; set; }
 
         [Required(ErrorMessage = "Es obligatorio introducir el mensaje")]
         public string Mensaje { get; set; }

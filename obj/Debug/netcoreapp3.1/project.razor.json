@@ -45,6 +45,39 @@
         }
       },
       {
+        "HashCode": 2011958743,
+        "Kind": "Components.Component",
+        "Name": "DataVentasWeb.Pages.Board",
+        "AssemblyName": "DataVentasWeb",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Board"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DataVentasWeb.Pages.Board"
+        }
+      },
+      {
+        "HashCode": 1393543742,
+        "Kind": "Components.Component",
+        "Name": "DataVentasWeb.Pages.Board",
+        "AssemblyName": "DataVentasWeb",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DataVentasWeb.Pages.Board"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DataVentasWeb.Pages.Board",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -431219493,
         "Kind": "Components.Component",
         "Name": "DataVentasWeb.Pages.Counter",
@@ -78,101 +111,154 @@
         }
       },
       {
-        "HashCode": -830296261,
+        "HashCode": 698444429,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Pages.FetchData",
+        "Name": "DataVentasWeb.Pages.Rules",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "FetchData"
+            "TagName": "Rules"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Pages.FetchData"
+          "Common.TypeName": "DataVentasWeb.Pages.Rules"
         }
       },
       {
-        "HashCode": -1805650858,
+        "HashCode": 687626524,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Pages.FetchData",
+        "Name": "DataVentasWeb.Pages.Rules",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DataVentasWeb.Pages.FetchData"
+            "TagName": "DataVentasWeb.Pages.Rules"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Pages.FetchData",
+          "Common.TypeName": "DataVentasWeb.Pages.Rules",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -683015593,
+        "HashCode": 431672587,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Pages.UsuariosPage",
+        "Name": "DataVentasWeb.Pages.Chat",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "UsuariosPage"
+            "TagName": "Chat"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Pages.UsuariosPage"
+          "Common.TypeName": "DataVentasWeb.Pages.Chat"
         }
       },
       {
-        "HashCode": 237391908,
+        "HashCode": 744611409,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Pages.UsuariosPage",
+        "Name": "DataVentasWeb.Pages.Chat",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DataVentasWeb.Pages.UsuariosPage"
+            "TagName": "DataVentasWeb.Pages.Chat"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Pages.UsuariosPage",
+          "Common.TypeName": "DataVentasWeb.Pages.Chat",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 15014531,
+        "HashCode": -1857896279,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.App",
+        "Name": "DataVentasWeb.Pages.VentasPage",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "VentasPage"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.App"
+          "Common.TypeName": "DataVentasWeb.Pages.VentasPage"
         }
       },
       {
-        "HashCode": -905596613,
+        "HashCode": 1971315578,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.App",
+        "Name": "DataVentasWeb.Pages.VentasPage",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DataVentasWeb.App"
+            "TagName": "DataVentasWeb.Pages.VentasPage"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.App",
+          "Common.TypeName": "DataVentasWeb.Pages.VentasPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -105160214,
+        "Kind": "Components.Component",
+        "Name": "DataVentasWeb.Shared.SurveyPrompt",
+        "AssemblyName": "DataVentasWeb",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DataVentasWeb.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": -1134729000,
+        "Kind": "Components.Component",
+        "Name": "DataVentasWeb.Shared.SurveyPrompt",
+        "AssemblyName": "DataVentasWeb",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DataVentasWeb.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DataVentasWeb.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -206,6 +292,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "DataVentasWeb.Shared.LoginDisplay",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1567069333,
+        "Kind": "Components.Component",
+        "Name": "DataVentasWeb.Shared.NavMenu",
+        "AssemblyName": "DataVentasWeb",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DataVentasWeb.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": 583980694,
+        "Kind": "Components.Component",
+        "Name": "DataVentasWeb.Shared.NavMenu",
+        "AssemblyName": "DataVentasWeb",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DataVentasWeb.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DataVentasWeb.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -306,88 +425,367 @@
         }
       },
       {
-        "HashCode": -1567069333,
+        "HashCode": 15014531,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Shared.NavMenu",
+        "Name": "DataVentasWeb.App",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NavMenu"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Shared.NavMenu"
+          "Common.TypeName": "DataVentasWeb.App"
         }
       },
       {
-        "HashCode": 583980694,
+        "HashCode": -905596613,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Shared.NavMenu",
+        "Name": "DataVentasWeb.App",
         "AssemblyName": "DataVentasWeb",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DataVentasWeb.Shared.NavMenu"
+            "TagName": "DataVentasWeb.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Shared.NavMenu",
+          "Common.TypeName": "DataVentasWeb.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -105160214,
+        "HashCode": -1713274639,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Shared.SurveyPrompt",
-        "AssemblyName": "DataVentasWeb",
+        "Name": "Blazored.Toast.BlazoredToast",
+        "AssemblyName": "Blazored.Toast",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SurveyPrompt"
+            "TagName": "BlazoredToast"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
+            "Name": "ToastId",
+            "TypeName": "System.Guid",
             "Metadata": {
-              "Common.PropertyName": "Title"
+              "Common.PropertyName": "ToastId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ToastSettings",
+            "TypeName": "Blazored.Toast.Configuration.ToastSettings",
+            "Metadata": {
+              "Common.PropertyName": "ToastSettings"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Timeout",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Timeout"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Shared.SurveyPrompt"
+          "Common.TypeName": "Blazored.Toast.BlazoredToast"
         }
       },
       {
-        "HashCode": -1134729000,
+        "HashCode": -921623207,
         "Kind": "Components.Component",
-        "Name": "DataVentasWeb.Shared.SurveyPrompt",
-        "AssemblyName": "DataVentasWeb",
+        "Name": "Blazored.Toast.BlazoredToast",
+        "AssemblyName": "Blazored.Toast",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DataVentasWeb.Shared.SurveyPrompt"
+            "TagName": "Blazored.Toast.BlazoredToast"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
+            "Name": "ToastId",
+            "TypeName": "System.Guid",
             "Metadata": {
-              "Common.PropertyName": "Title"
+              "Common.PropertyName": "ToastId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ToastSettings",
+            "TypeName": "Blazored.Toast.Configuration.ToastSettings",
+            "Metadata": {
+              "Common.PropertyName": "ToastSettings"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Timeout",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Timeout"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DataVentasWeb.Shared.SurveyPrompt",
+          "Common.TypeName": "Blazored.Toast.BlazoredToast",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -237185128,
+        "Kind": "Components.Component",
+        "Name": "Blazored.Toast.BlazoredToasts",
+        "AssemblyName": "Blazored.Toast",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazoredToasts"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "IconType",
+            "TypeName": "Blazored.Toast.IconType?",
+            "Metadata": {
+              "Common.PropertyName": "IconType"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InfoClass",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "InfoClass"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InfoIcon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "InfoIcon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SuccessClass",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "SuccessClass"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SuccessIcon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "SuccessIcon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "WarningClass",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "WarningClass"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "WarningIcon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "WarningIcon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ErrorClass",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ErrorClass"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ErrorIcon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ErrorIcon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Position",
+            "TypeName": "Blazored.Toast.Configuration.ToastPosition",
+            "IsEnum": true,
+            "Metadata": {
+              "Common.PropertyName": "Position"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Timeout",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Timeout"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "RemoveToastsOnNavigation",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "RemoveToastsOnNavigation"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ShowProgressBar",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "ShowProgressBar"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazored.Toast.BlazoredToasts"
+        }
+      },
+      {
+        "HashCode": -523824299,
+        "Kind": "Components.Component",
+        "Name": "Blazored.Toast.BlazoredToasts",
+        "AssemblyName": "Blazored.Toast",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Blazored.Toast.BlazoredToasts"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "IconType",
+            "TypeName": "Blazored.Toast.IconType?",
+            "Metadata": {
+              "Common.PropertyName": "IconType"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InfoClass",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "InfoClass"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InfoIcon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "InfoIcon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SuccessClass",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "SuccessClass"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SuccessIcon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "SuccessIcon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "WarningClass",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "WarningClass"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "WarningIcon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "WarningIcon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ErrorClass",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ErrorClass"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ErrorIcon",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ErrorIcon"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Position",
+            "TypeName": "Blazored.Toast.Configuration.ToastPosition",
+            "IsEnum": true,
+            "Metadata": {
+              "Common.PropertyName": "Position"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Timeout",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Timeout"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "RemoveToastsOnNavigation",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "RemoveToastsOnNavigation"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ShowProgressBar",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "ShowProgressBar"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazored.Toast.BlazoredToasts",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -1142,338 +1540,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1713274639,
-        "Kind": "Components.Component",
-        "Name": "Blazored.Toast.BlazoredToast",
-        "AssemblyName": "Blazored.Toast",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazoredToast"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "ToastId",
-            "TypeName": "System.Guid",
-            "Metadata": {
-              "Common.PropertyName": "ToastId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ToastSettings",
-            "TypeName": "Blazored.Toast.Configuration.ToastSettings",
-            "Metadata": {
-              "Common.PropertyName": "ToastSettings"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Timeout",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Timeout"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazored.Toast.BlazoredToast"
-        }
-      },
-      {
-        "HashCode": -921623207,
-        "Kind": "Components.Component",
-        "Name": "Blazored.Toast.BlazoredToast",
-        "AssemblyName": "Blazored.Toast",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Blazored.Toast.BlazoredToast"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "ToastId",
-            "TypeName": "System.Guid",
-            "Metadata": {
-              "Common.PropertyName": "ToastId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ToastSettings",
-            "TypeName": "Blazored.Toast.Configuration.ToastSettings",
-            "Metadata": {
-              "Common.PropertyName": "ToastSettings"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Timeout",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Timeout"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazored.Toast.BlazoredToast",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -237185128,
-        "Kind": "Components.Component",
-        "Name": "Blazored.Toast.BlazoredToasts",
-        "AssemblyName": "Blazored.Toast",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazoredToasts"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "IconType",
-            "TypeName": "Blazored.Toast.IconType?",
-            "Metadata": {
-              "Common.PropertyName": "IconType"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "InfoClass",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "InfoClass"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "InfoIcon",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "InfoIcon"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SuccessClass",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "SuccessClass"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SuccessIcon",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "SuccessIcon"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "WarningClass",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "WarningClass"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "WarningIcon",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "WarningIcon"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ErrorClass",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "ErrorClass"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ErrorIcon",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "ErrorIcon"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Position",
-            "TypeName": "Blazored.Toast.Configuration.ToastPosition",
-            "IsEnum": true,
-            "Metadata": {
-              "Common.PropertyName": "Position"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Timeout",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Timeout"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "RemoveToastsOnNavigation",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "RemoveToastsOnNavigation"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ShowProgressBar",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "ShowProgressBar"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazored.Toast.BlazoredToasts"
-        }
-      },
-      {
-        "HashCode": -523824299,
-        "Kind": "Components.Component",
-        "Name": "Blazored.Toast.BlazoredToasts",
-        "AssemblyName": "Blazored.Toast",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Blazored.Toast.BlazoredToasts"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "IconType",
-            "TypeName": "Blazored.Toast.IconType?",
-            "Metadata": {
-              "Common.PropertyName": "IconType"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "InfoClass",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "InfoClass"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "InfoIcon",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "InfoIcon"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SuccessClass",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "SuccessClass"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SuccessIcon",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "SuccessIcon"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "WarningClass",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "WarningClass"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "WarningIcon",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "WarningIcon"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ErrorClass",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "ErrorClass"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ErrorIcon",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "ErrorIcon"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Position",
-            "TypeName": "Blazored.Toast.Configuration.ToastPosition",
-            "IsEnum": true,
-            "Metadata": {
-              "Common.PropertyName": "Position"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Timeout",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Timeout"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "RemoveToastsOnNavigation",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "RemoveToastsOnNavigation"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ShowProgressBar",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "ShowProgressBar"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazored.Toast.BlazoredToasts",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -15119,8 +15185,13 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/miguelgondres/Projects/DataVentasWeb/Pages/FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
+      "FilePath": "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Rules.razor",
+      "TargetPath": "Pages\\Rules.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Chat.razor",
+      "TargetPath": "Pages\\Chat.razor",
       "FileKind": "component"
     },
     {
@@ -15134,13 +15205,18 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/miguelgondres/Projects/DataVentasWeb/App.razor",
-      "TargetPath": "App.razor",
+      "FilePath": "/Users/miguelgondres/Projects/DataVentasWeb/Pages/VentasPage.razor",
+      "TargetPath": "Pages\\VentasPage.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/miguelgondres/Projects/DataVentasWeb/Pages/UsuariosPage.razor",
-      "TargetPath": "Pages\\UsuariosPage.razor",
+      "FilePath": "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Board.razor",
+      "TargetPath": "Pages\\Board.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/miguelgondres/Projects/DataVentasWeb/App.razor",
+      "TargetPath": "App.razor",
       "FileKind": "component"
     },
     {

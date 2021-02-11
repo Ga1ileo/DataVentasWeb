@@ -1,6 +1,8 @@
 ﻿@page "/"
 @page "/game"
 
+@inject HttpClient Http
+
 @inject IToastService toast
 @attribute [Authorize]
 
@@ -19,6 +21,7 @@
         font-size: 50px;
     }
 </style>
+
 
 <div class="container">
     <div class="row">
@@ -56,8 +59,8 @@
     <DataAnnotationsValidator />
     <div class="row">
         <div class="col">
-            <input type="text" @bind="jugador.Nombre" class="form-control" placeholder="username">
-            <ValidationMessage For="@(() => jugador.Nombre)"></ValidationMessage>
+            <input type="text" @bind="jugador.nombre" class="form-control" placeholder="username">
+            <ValidationMessage For="@(() => jugador.nombre)"></ValidationMessage>
         </div>
         <div class="col">
             <textarea id="mensaje" class="form-control" @bind="jugador.Mensaje" placeholder="type message for the chat" rows="1"></textarea>
@@ -81,39 +84,14 @@
 
     async Task Guardar()
     {
-        bool guardado;
-
-        if (jugador.Nombre == null)
-        {
-            toast.ShowError("Please fill username and message and you need to PLAY");
-        }
-        else if (jugador.Mensaje == null)
-        {
-            toast.ShowError("Please fill username and message and you need to PLAY");
-        }
-        else if (jugador.Tiempo == null)
-        {
-            toast.ShowError("Please fill username and message and you need to PLAY");
-        }
-        else
-        {
-            guardado = await JugadoresBLL.Guardar(jugador);
-            if (guardado)
-            {
-                SetupGame();
-                toast.ShowSuccess("Guardado");
-            }
-            else
-                toast.ShowError("Error al guardar");
-        }
-
-
-
+        
+            await Http.PostAsJsonAsync("https://jugadorgalileo.azurewebsites.net/api/jugadores", jugador);
+   
     }
 
 
     List<string> animalEmoji = new List<string>()
-{
+    {
         "🐶","🐶",
         "🐺","🐺",
         "🐮","🐮",
@@ -153,7 +131,7 @@
             .ToList();
         matchesFound = 0;
         tenthsOfSecoundsElapsed = 0;
-        jugador.Tiempo = timeDisplay;
+        jugador.puntuacion = timeDisplay;
     }
 
     string lastAnimalFound = string.Empty;
@@ -210,7 +188,7 @@
 
     public void getTime(string t)
     {
-        t = jugador.Tiempo;
+        t = jugador.puntuacion;
     }
 
 }

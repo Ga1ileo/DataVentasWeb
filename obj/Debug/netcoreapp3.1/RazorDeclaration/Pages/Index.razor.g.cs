@@ -90,28 +90,28 @@ using Blazored.Toast.Services;
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+#line 9 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
 using DataVentasWeb.BLL;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+#line 10 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
 using DataVentasWeb.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+#line 11 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
 using System.Timers;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+#line 7 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
            [Authorize]
 
 #line default
@@ -127,7 +127,7 @@ using System.Timers;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 76 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
+#line 79 "/Users/miguelgondres/Projects/DataVentasWeb/Pages/Index.razor"
       
 
     [Inject]
@@ -136,39 +136,14 @@ using System.Timers;
 
     async Task Guardar()
     {
-        bool guardado;
-
-        if (jugador.Nombre == null)
-        {
-            toast.ShowError("Please fill username and message and you need to PLAY");
-        }
-        else if (jugador.Mensaje == null)
-        {
-            toast.ShowError("Please fill username and message and you need to PLAY");
-        }
-        else if (jugador.Tiempo == null)
-        {
-            toast.ShowError("Please fill username and message and you need to PLAY");
-        }
-        else
-        {
-            guardado = await JugadoresBLL.Guardar(jugador);
-            if (guardado)
-            {
-                SetupGame();
-                toast.ShowSuccess("Guardado");
-            }
-            else
-                toast.ShowError("Error al guardar");
-        }
-
-
-
+        
+            await Http.PostAsJsonAsync("https://jugadorgalileo.azurewebsites.net/api/jugadores", jugador);
+   
     }
 
 
     List<string> animalEmoji = new List<string>()
-{
+    {
         "🐶","🐶",
         "🐺","🐺",
         "🐮","🐮",
@@ -208,7 +183,7 @@ using System.Timers;
             .ToList();
         matchesFound = 0;
         tenthsOfSecoundsElapsed = 0;
-        jugador.Tiempo = timeDisplay;
+        jugador.puntuacion = timeDisplay;
     }
 
     string lastAnimalFound = string.Empty;
@@ -265,7 +240,7 @@ using System.Timers;
 
     public void getTime(string t)
     {
-        t = jugador.Tiempo;
+        t = jugador.puntuacion;
     }
 
 
@@ -273,6 +248,7 @@ using System.Timers;
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IToastService toast { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591
